@@ -24,7 +24,7 @@ WORKDIR /app
 COPY --from=builder /app/server .
 
 # Expose port
-EXPOSE 80
+EXPOSE 8080
 
 # Run the app
 ENTRYPOINT ["./server"]
