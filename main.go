@@ -10,5 +10,5 @@ func main() {
 		c.String(200, c.ClientIP())
 	})
 	r.SetTrustedProxies((nil))
-	r.Run(":8080")
+	r.Run(":80")
 }
