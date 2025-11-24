@@ -9,6 +9,6 @@ func main() {
 	r.GET("/", func(c *gin.Context) {
 		c.String(200, c.ClientIP())
 	})
-	r.SetTrustedProxies((nil))
+
 	r.Run(":8080")
 }
